@@ -1,0 +1,99 @@
+body {
+  font-family: Cairo, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  letter-spacing: 0.2rem;
+}
+.nav-icon-container {
+  text-align: center;
+}
+
+.nav-icon {
+  padding: 10px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.nav-container {
+  z-index: 1;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+.nav-title {
+  background-color: white;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: 'Monoton', sans-serif;
+}
+.card-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.card {
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  text-align: center;
+  background-size: 200% 200%;
+  background-position: 50% 50%;
+  animation: gradientAnimation 8s infinite;
+  padding: 30px;
+  text-decoration: none;
+  position: relative;
+}
+
+.card:nth-child(odd) {
+  background: linear-gradient(135deg, #dad299, #b0dab9);
+}
+
+.card:nth-child(even) {
+  background: linear-gradient(135deg, #b4d3d2, #e2cfc4);
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.icon-container {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  right: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  top: 0;
+  padding: 10px 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
