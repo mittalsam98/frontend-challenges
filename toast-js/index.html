@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toast JS</title>
+    <link rel='stylesheet' href='style.css' />
+</head>
+
+<body>
+    <div class="toast-js-main">
+        <div class="toast-js-main-title">
+            Toast JS
+        </div>
+        <div class="toast-property-parent">
+            <div class="toast-property-container">
+                <div class="toast-property-title">Choose a Position</div>
+                <div class="property-radio-btn">
+                    <input type="radio" checked value="top-right" name="position" />
+                    <label for="top-right">Top-Right</label>
+                </div>
+                <div class="property-radio-btn">
+                    <input type="radio" value="top-left" name="position" />
+                    <label for="top-left">Top-Left</label>
+                </div>
+                <div class="property-radio-btn">
+                    <input type="radio" value="bottom-right" name="position" />
+                    <label for="bottom-right">Bottom-Right</label>
+                </div>
+                <div class="property-radio-btn">
+                    <input type="radio" value="bottom-left" name="position" />
+                    <label for="bottom-left">Bottom-Left</label>
+                </div>
+            </div>
+            <div class="toast-property-container">
+                <div class="toast-property-title">Toast Type</div>
+                <div class="property-radio-btn">
+                    <input checked type="radio" value="success" name="type" />
+                    <label for="success">Success</label>
+                </div>
+                <div class="property-radio-btn">
+                    <input type="radio" value="info" name="type" />
+                    <label for="info">Info</label>
+                </div>
+                <div class="property-radio-btn">
+                    <input type="radio" value="warning" name="type" />
+                    <label for="warning">Warning</label>
+                </div>
+                <div class="property-radio-btn">
+                    <input type="radio" value="error" name="type" />
+                    <label for="error">Error</label>
+                </div>
+            </div>
+        </div>
+        <div class="toast-duration-property-container">
+            <div class="duration-property-title">
+                Duration (ms)
+            </div>
+            <input type="number" value='1000' id="duration" name="type" />
+        </div>
+
+        <input type="text" placeholder="Enter your message" id='toast-message' value="Enter the toast message here!" />
+        <button type="button" class="toast-button" id="show-toast">Show Toast</button>
+
+
+
+    </div>
+    <div id="toast-js-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
